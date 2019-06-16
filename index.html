@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script   src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!--<script src="script.js"></script>-->
+    <title></title>
+  </head>
+  <body data-spy="scroll" data-target=".navbar">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#monMenu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">Nom du site</a>
+        </div>
+        <div class="collapse navbar-collapse responsive" id="monMenu">
+          <ul class="nav navbar-nav" style="text-align: center;">
+            <li><a href="accueil">ACCUEIL</a></li>
+            <li><a href="quisommesnous">QUI SOMMES-NOUS?</a></li>
+            <li><a href="nosprojets">NOS PROJETS</a></li>
+            <li><a href="contact">CONTACT</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"> Login</span></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="container-fluid" style="margin-top: 50px; margin-left:50px;">
+          <a href="#" class="btn btn-default"><span class="glyphicon glyphicon-search"> Search</span></a><br><br>
+          <a href="#" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-print"> Print</span></a><br><br>
+          <h2 id="accueil" style="color: red;">ACCUEIL</h2>
+          <a href="#" class="btn btn-info btn-lg" data-toggle="modal" data-target="#monModal">Ouvrir Modal</a>
+          <div class="modal fade" id="monModal">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">x</button>
+                  <h4 class="modal-title">Titre de notre modal</h4>
+                </div>
+                <div class="modal-body">
+                  <p>Hello les amis!</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-info" data-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="quisommesnous" style="color: red; margin-left:50px;">QUI SOMMES-NOUS</h2>
+          <form class="form" style="margin: 50px;">
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" style="width:10%">10%</div>
+              <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" style="width:20%">20%</div>
+              <div class="progress-bar progress-bar-warning" role="progressbar" style="width:25%">25%</div>
+              <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" style="width:30%">30%</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-success" role="progressbar" style="width:20%">20%</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" style="width:40%">40%</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-warning" role="progressbar" style="width:60%">60%</div>
+            </div>
+            <div class="progress">
+              <div class="progress-bar progress-bar-danger progress-bar-striped active" role="progressbar" style="width:80%">80%</div>
+            </div>
+
+            <div id="monCarousel" class="carousel slide" data-ride="carousel" style="max-width:800px;">
+              <ol class="carousel-indicators">
+                <li data-target="#monCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#monCarousel" data-slide-to="1"></li>
+                <li data-target="#monCarousel" data-slide-to="2"></li>
+                <li data-target="#monCarousel" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <img src="1.jpg" style="width:860px; height:575px;">
+                  <div class="caroussel-caption">
+                    <h3>Laguna Colorada</h3>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="2.jpg" style="width:860px; height:575px;">
+                  <div class="caroussel-caption">
+                    <h3>Salar d'Uyuni</h3>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="3.jpg" style="width:860px; height:575px;">
+                  <div class="caroussel-caption">
+                    <h3>Laguna Verde</h3>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="4.jpg" style="width:860px; height:575px;">
+                  <div class="caroussel-caption">
+                    <h3>Chutes d'Iguazu</h3>
+                  </div>
+                </div>
+              </div>
+              <a href="#monCarousel" class="left carousel-control" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+              </a>
+              <a href="#monCarouel" class="right carousel-control" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </a>
+            </div><br><br>
+
+            <img src="Place_Napoleon.jpg" class="img-responsive" style="margin-bottom:20px; text-align="center;" max-width-responsive:800px;"> <!-- img-circle ou img-thumbnail ou img-rounded-->
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" class="form-control input-lg">
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="text" id="email" class="form-control">
+            </div>
+            <div class="form-group has-success">
+              <label for="comment">Comment</label>
+              <textarea class="form-control" id="comment"></textarea>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox">Option 1</label>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" disabled>Option 2</label>
+            </div>
+
+            <h2 id="nosprojets" style="color: red;">NOS PROJETS</h2>
+            <div class="container-fluid" style="margin-top: 50px;">
+              <button type="submit" class="btn btn-default">submit</button>
+              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn btn-success">Success</button>
+              <button type="button" class="btn btn-info">Info</button>
+              <button type="button" class="btn btn-warning">Warning</button>
+              <button type="button" class="btn btn-danger">Danger</button>
+              <button type="button" class="btn btn-link">Link</button><br><br>
+              <button type="button" class="btn btn-default btn-block">Default</button><br><br>
+              <button type="button" class="btn btn-primary" id="special" data-toggle="tooltip" data-placement="right" title="Coucou les amis! Me voici.">Tooltip!</button>
+            </div><br><br>
+
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary">Primary</button>
+              <button type="button" class="btn btn-success">Success</button>
+              <button type="submit" class="btn btn-info">Info</button>
+            </div><br><br>
+
+            <div class="btn-group-vertical">
+              <button type="button" class="btn btn-info">Info</button>
+              <button type="button" class="btn btn-warning">Warning</button>
+              <button type="button" class="btn btn-danger">Danger</button>
+            </div><br><br>
+            <div class="dropdown">
+              <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown">Fruits <span class="caret"></span></button>
+              <ul class="dropdown-menu">
+                <li class="disabled"><a href="#">Banane</a></li>
+                <li><a href="#">Pomme</a></li>
+                <li><a href="#">Poire</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Agrumes</li>
+                <li><a href="#">Orange</a></li>
+                <li><a href="#">Pamplemousse</a></li>
+                <li><a href="#">Citron</a></li>
+              </ul>
+            </div>
+          </form>
+          <h3>Voici un <span class="bg-danger"> paragraphe</span> un peu plus long. Moi, ça va bien et vous?</h3>
+      </div>
+    </div>
+      <h2 id="contact" style="color: red; margin-left:50px;">CONTACT</h2>
+      <p>Contenu</p>
+      <p>Contenu</p>
+      <p>Contenu</p>
+      <p>Contenu</p>
+  </body>
+</html>
